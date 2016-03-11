@@ -1,7 +1,7 @@
 {
   "name": "grunt-git-describe",
   "description": "Describes git commit. Forked from https://github.com/mikaelkaron/grunt-git-describe",
-  "version": "dev-2.4.1",
+  "version": "2.4.1",
   "homepage": "https://github.com/chrisnoel/grunt-git-describe",
   "author": {
     "name": "Chris Noel",
