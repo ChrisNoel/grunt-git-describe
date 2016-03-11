@@ -48,7 +48,7 @@ module.exports = function (grunt) {
 		// Spawn git
 		_spawn({
 			"cmd" : "git",
-			"args" : [ "describe", "--tags", "--always", "--long", options[COMMITISH] || "--dirty" ],
+			"args" : [ "describe", "--all", "--always", "--long", options[COMMITISH] || "--dirty" ],
 			"opts" : {
 				"cwd" : options[CWD]
 			}
