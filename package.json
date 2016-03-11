@@ -1,18 +1,18 @@
 {
   "name": "grunt-git-describe",
-  "description": "Describes git commit",
-  "version": "2.3.3-0",
-  "homepage": "https://github.com/mikaelkaron/grunt-git-describe",
+  "description": "Describes git commit. Forked from https://github.com/mikaelkaron/grunt-git-describe",
+  "version": "dev-2.4.1",
+  "homepage": "https://github.com/chrisnoel/grunt-git-describe",
   "author": {
-    "name": "Mikael Karon",
-    "email": "mikael@karon.se"
+    "name": "Chris Noel",
+    "email": "chris@noel.nz"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mikaelkaron/grunt-git-describe.git"
+    "url": "https://github.com/chrisnoel/grunt-git-describe.git"
   },
   "bugs": {
-    "url": "https://github.com/mikaelkaron/grunt-git-describe/issues"
+    "url": "https://github.com/chrisnoel/grunt-git-describe/issues"
   },
   "licenses": [
     {
