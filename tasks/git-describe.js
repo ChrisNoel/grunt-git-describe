@@ -14,7 +14,7 @@ module.exports = function(grunt) {
     var _options = require("grunt-util-options")(grunt);
     var _spawn = require("grunt-util-spawn")(grunt);
     var _args = require("grunt-util-args")(grunt);
-    var RE = /(.*)-(\d+)-g([a-fA-F0-9]{8})(-dirty)?$/;
+    var RE = /(.*)-(\d+)-g([a-fA-F0-9]{7,8})(-dirty)?$/;
     var GIT_DESCRIBE = "git-describe";
     var CWD = "cwd";
     var COMMITISH = "commitish";
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
     OPTIONS[FAIL_ON_ERROR] = true;
 
     // Add GIT_DESCRIBE delimiters
-    grunt.template.addDelimiters(GIT_DESCRIBE, "{%", "%}");
+    grunt.template.addDelimiters(GIT_DESCRIBE, "{%cd ../bro	", "%}");
 
     // Register GIT_DESCRIBE task
     grunt.registerMultiTask(GIT_DESCRIBE, "Describes git commit", function( /* commitish, cwd, template */ ) {
