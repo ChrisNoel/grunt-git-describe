@@ -28,7 +28,7 @@ module.exports = function(grunt) {
     OPTIONS[FAIL_ON_ERROR] = true;
 
     // Add GIT_DESCRIBE delimiters
-    grunt.template.addDelimiters(GIT_DESCRIBE, "{%cd ../bro	", "%}");
+    grunt.template.addDelimiters(GIT_DESCRIBE, "{%", "%}");
 
     // Register GIT_DESCRIBE task
     grunt.registerMultiTask(GIT_DESCRIBE, "Describes git commit", function( /* commitish, cwd, template */ ) {
